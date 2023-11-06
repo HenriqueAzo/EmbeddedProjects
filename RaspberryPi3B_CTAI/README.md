@@ -8,4 +8,8 @@ Material used:
 - Ethernet Cable
 
 References:
-How to assign static IP address to raspberry pi: https://youtu.be/LCJtUbRlIXE
+- How to assign static IP address to raspberry pi:
+https://youtu.be/LCJtUbRlIXE
+
+- How to control GPIO from desktop using TKinter:
+https://maker.pro/raspberry-pi/tutorial/how-to-use-tkinter-to-control-raspberry-pi-gpio-pins

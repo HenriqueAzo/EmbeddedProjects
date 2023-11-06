@@ -8,4 +8,4 @@ Material used:
 - Ethernet Cable
 
 References:
-How to assign static IP address to raspberry pi? [here][https://youtu.be/LCJtUbRlIXE]
+How to assign static IP address to raspberry pi: https://youtu.be/LCJtUbRlIXE

@@ -13,3 +13,7 @@ https://youtu.be/LCJtUbRlIXE
 
 - How to control GPIO from desktop using TKinter:
 https://maker.pro/raspberry-pi/tutorial/how-to-use-tkinter-to-control-raspberry-pi-gpio-pins
+
+- How to design PCBs with KiCAD:
+https://www.build-electronic-circuits.com/kicad-tutorial/
+.

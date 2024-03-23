@@ -12,7 +12,7 @@ int hora;//variavel para armazenar hora atual
 
 //variavel para armazenamento de contador de tempo e intervalo de checagem de horario
 unsigned long previousMillis = 0;
-unsigned long interval = 5000;
+unsigned long interval = 120000;
 
 const int botaoRele=5; //pino (D1) para colocar botao para ligar/desligar coolers. botao deve aterrar pino.
 const int controleRele=2; //pino (D4) de saída para controle dos relés
@@ -48,14 +48,16 @@ void loop() {
     Serial.println(hora);
     Serial.print(timeClient.getHours());
     Serial.print(":");
-    Serial.print(timeClient.getMinutes());
+    Serial.println(timeClient.getMinutes());
   }
 
   if (digitalRead(botaoRele)==0){//checagem do botão
-    digitalWrite(controleRele, LOW);
-  }else if(hora>=10 && hora<=17){//checagem do horário: ligar relés entre 10:00 e 18:00.
-    digitalWrite(controleRele, LOW);
-  }else{//nada a fazer. relés desativados.
     digitalWrite(controleRele, HIGH);
+    Serial.println("relés ligados devido ao botão");
+  }else if(hora>=10 && hora<=17){//checagem do horário: ligar relés entre 10:00 e 18:00.
+    digitalWrite(controleRele, HIGH);
+    Serial.println("relés ligados devido à hora");
+  }else{//nada a fazer. relés desativados.
+    digitalWrite(controleRele, LOW);
   }
 }
